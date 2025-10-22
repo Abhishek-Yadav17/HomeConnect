@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/listings.scss';
+import '../styles/Listings.scss';
 import listingsData from '../data/listingsData.json';
 import { useNavigate } from 'react-router-dom';
 
