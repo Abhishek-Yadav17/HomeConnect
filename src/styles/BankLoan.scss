@@ -1,0 +1,55 @@
+.bank {
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+    .coming-soon {
+        text-align: center;
+        color: #fff;
+        animation: fadeIn 1.5s ease;
+
+        h1 {
+            font-size: 4vw;
+            color: #FDA33A;
+            margin-bottom: 1vw;
+            animation: pulse 2s infinite;
+            font-family: Solflare;
+        }
+
+        p {
+            font-size: 1.5vw;
+            color: #ffffffaa;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}

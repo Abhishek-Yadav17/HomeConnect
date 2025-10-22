@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "modern",
+    "image": "modern.jpg",
+    "title": "Modern Living Room",
+    "price": "$8,000",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "45m²"
+  },
+  {
+    "id": 2,
+    "type": "classic",
+    "image": "classic.jpg",
+    "title": "Classic Master Bedroom",
+    "price": "$6,500",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "30m²"
+  },
+  {
+    "id": 3,
+    "type": "minimalist",
+    "image": "minimalist.jpg",
+    "title": "Minimalist Studio Setup",
+    "price": "$5,200",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "25m²"
+  },
+  {
+    "id": 4,
+    "type": "luxury",
+    "image": "luxury.jpg",
+    "title": "Luxury Penthouse Design",
+    "price": "$15,000",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "100m²"
+  },
+  {
+    "id": 5,
+    "type": "bohemian",
+    "image": "bohemian.jpg",
+    "title": "Bohemian Living Space",
+    "price": "$7,000",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "40m²"
+  },
+  {
+    "id": 6,
+    "type": "modern",
+    "image": "modern.jpg",
+    "title": "Contemporary Kitchen",
+    "price": "$9,500",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "35m²"
+  }
+]

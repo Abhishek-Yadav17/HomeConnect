@@ -1,0 +1,96 @@
+.faq {
+    width: 100%;
+    padding: 4vw;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    >p {
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        gap: 1vw;
+        font-size: 1.2vw;
+        border: 1px solid #ffffff2a;
+        padding: 0.5vw 2vw;
+        border-radius: 50px;
+        box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+
+        .pilldot {
+            width: 8px;
+            height: 8px;
+            background-color: #FDA33A;
+            border-radius: 50%;
+        }
+    }
+
+    h2 {
+        font-size: 3vw;
+        font-weight: 400;
+        align-self: flex-start;
+
+        span {
+            font-family: Solflare;
+            color: #E98A3D;
+            font-size: 4vw;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vw;
+        width: 100%;
+        gap: 4vw;
+
+        .image-section {
+            flex: 1;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+        }
+
+        .accordion {
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+
+            .faq-item {
+                background-color: rgba(255, 255, 255, 0.05);
+                padding: 1.5vw;
+                border-radius: 20px;
+
+                .faq-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    h4 {
+                        font-size: 1.4vw;
+                        font-weight: 500;
+                    }
+
+                    span {
+                        font-size: 2vw;
+                        color: #FDA33A;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                .faq-answer {
+                    margin-top: 1vw;
+                    font-size: 1.1vw;
+                    color: #bdbcbc;
+                }
+            }
+        }
+    }
+}

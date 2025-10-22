@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "text": "Our experience with this company was outstanding. Every member of the team demonstrated expertise, creativity, and dedication. They listened carefully to our needs and turned our ideas into a beautiful, functional home. The process was smooth, transparent, and enjoyable. We couldn't be happier with the final result.",
+    "avatar": "/blog1.webp",
+    "name": "Sarah Johnson",
+    "profession": "Real Estate Investor"
+  },
+  {
+    "id": 2,
+    "text": "From start to finish, the service we received was exceptional. The team was attentive, professional, and highly skilled, ensuring every detail reflected our vision. Their commitment to quality and design excellence turned our dream home into reality. We highly recommend them to anyone looking for an extraordinary living space.",
+    "avatar": "/blog2.webp",
+    "name": "David Lee",
+    "profession": "Architect"
+  },
+  {
+    "id": 3,
+    "text": "Working with this team has been an exceptional experience. From our first consultation to the final handover, every step was handled with professionalism, attention to detail, and genuine care. They truly understood our vision and transformed it into a home that exceeds all expectations. Highly recommended for anyone seeking quality and personalized service.",
+    "avatar": "/blog3.webp",
+    "name": "Emily Chen",
+    "profession": "Business Owner"
+  }
+]

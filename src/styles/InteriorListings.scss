@@ -1,0 +1,160 @@
+.interior-listings {
+    width: 100%;
+    padding: 4vw;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        font-size: 1.2vw;
+        border: 1px solid #ffffff2a;
+        padding: 0.5vw 2vw;
+        border-radius: 50px;
+        box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+        align-self: flex-start;
+
+        .pilldot {
+            width: 8px;
+            height: 8px;
+            background-color: #FDA33A;
+            border-radius: 50%;
+        }
+    }
+
+    h2 {
+        font-size: 3vw;
+        align-self: flex-start;
+
+        span {
+            font-family: Solflare;
+            display: block;
+            color: #E98A3D;
+            font-size: 4vw;
+        }
+    }
+
+    >h4 {
+        font-size: 1.5vw;
+        align-self: flex-start;
+        font-weight: 400;
+        width: 50%;
+    }
+
+    .filters {
+        display: flex;
+        gap: 1vw;
+        margin: 1vw 0;
+        align-self: flex-start;
+        margin: 1vw 0;
+        padding: 0.5vw 1vw;
+        border-radius: 50px;
+        border: 1px solid #ffffff33;
+
+        button {
+            padding: 1.2vw 2vw;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            color: #FFF;
+            border: none;
+            font-size: 1vw;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+
+            &.active,
+            &:hover {
+                background-color: #FDA33A;
+                color: #000;
+                box-shadow: 0 0 20px #FDA33A;
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        gap: 2vw;
+        margin-top: 2vw;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .card {
+            width: 30%;
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: all ease 0.5s;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1.5vw;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.777), transparent 60%);
+                transition: all 0.4s ease;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    transform: translateY(-100%);
+                    opacity: 0;
+                    transition: all 0.4s ease;
+
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4vw;
+                        font-size: 1.2vw;
+
+                        i {
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #fff;
+
+                    h4 {
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+
+            &:hover .overlay .top {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            &:hover img {
+                scale: 1.2;
+            }
+        }
+    }
+}

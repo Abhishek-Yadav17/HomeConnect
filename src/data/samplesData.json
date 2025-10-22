@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "image": "card1.webp",
+    "title": "Modern Villa"
+  },
+  {
+    "id": 2,
+    "image": "card2.webp",
+    "title": "Urban Apartment"
+  },
+  {
+    "id": 3,
+    "image": "card3.webp",
+    "title": "Country House"
+  },
+  {
+    "id": 4,
+    "image": "card4.webp",
+    "title": "Lake View Condo"
+  },
+  {
+    "id": 5,
+    "image": "card5.jpg",
+    "title": "Downtown Loft"
+  }
+]

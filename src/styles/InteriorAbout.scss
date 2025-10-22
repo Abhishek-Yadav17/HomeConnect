@@ -1,0 +1,120 @@
+.interior-about {
+    height: fit-content;
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    flex-direction: column;
+    background-color: #191919;
+    color: #FFF;
+
+    @media (max-width: 768px) {
+        gap: 8vw;
+    }
+
+    // .stats {
+    //     height: fit-content;
+    //     width: 70%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+
+    //     @media (max-width: 768px) {
+    //         width: 100%;
+    //     }
+
+    //     .stats-elem {
+    //         display: flex;
+    //         flex-direction: column;
+    //         justify-content: center;
+    //         align-items: center;
+    //         gap: 1vw;
+
+    //         h2 {
+    //             font-size: 3vw;
+    //             color: #E98A3D;
+    //             font-family: Solflare;
+
+    //             @media (max-width: 768px) {
+    //                 font-size: 5vw;
+    //             }
+    //         }
+
+    //         h4 {
+    //             font-size: 1.3vw;
+    //             font-weight: 400;
+
+    //             @media (max-width: 768px) {
+    //                 font-size: 3vw;
+    //             }
+    //         }
+    //     }
+    // }
+
+    .interior-about-details {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 10vw;
+        }
+
+        p {
+            height: fit-content;
+            font-size: 1.2vw;
+            border: 1px solid #ffffff46;
+            padding: 0.5vw 2vw;
+            border-radius: 50px;
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+
+            @media (max-width: 768px) {
+                font-size: 3vw;
+                padding: 1vw 4vw;
+                gap: 2vw;
+            }
+
+            .pilldot {
+                height: 8px;
+                width: 8px;
+                background-color: #E98A3D;
+                border-radius: 50%;
+            }
+        }
+
+        h4 {
+            width: 50%;
+            height: fit-content;
+            font-size: 1.5vw;
+            font-weight: 400;
+            line-height: 1.5;
+
+            @media (max-width: 768px) {
+                font-size: 4vw;
+                text-align: center;
+                width: 100%;
+            }
+
+            span {
+                font-family: Solflare;
+                color: #E98A3D;
+                font-size: 2vw;
+            }
+
+            .tagline {
+                display: block;
+                color: #FFF;
+                font-family: Andalsh;
+                font-size: 1.5vw;
+                margin-top: 4vw;
+            }
+        }
+    }
+}

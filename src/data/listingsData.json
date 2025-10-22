@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "residential",
+    "image": "/card1.webp",
+    "title": "Luxury Villa",
+    "price": "$450,000",
+    "beds": "3 Beds",
+    "baths": "2 Baths",
+    "area": "90m²"
+  },
+  {
+    "id": 2,
+    "type": "commercial",
+    "image": "/card4.webp",
+    "title": "City Office Space",
+    "price": "$450,000",
+    "beds": "2 Rooms",
+    "baths": "1 Bath",
+    "area": "80m²"
+  },
+  {
+    "id": 3,
+    "type": "residential",
+    "image": "/card2.webp",
+    "title": "Lakeside Resort",
+    "price": "$654,000",
+    "beds": "4 Beds",
+    "baths": "3 Baths",
+    "area": "100m²"
+  },
+  {
+    "id": 4,
+    "type": "commercial",
+    "image": "/card5.jpg",
+    "title": "Retail Shop",
+    "price": "$450,000",
+    "beds": "1 Floor",
+    "baths": "1 Bath",
+    "area": "60m²"
+  },
+  {
+    "id": 5,
+    "type": "residential",
+    "image": "/card3.webp",
+    "title": "Mountain Retreat",
+    "price": "$720,000",
+    "beds": "5 Beds",
+    "baths": "4 Baths",
+    "area": "150m²"
+  },
+  {
+    "id": 6,
+    "type": "land",
+    "image": "/card6.webp",
+    "title": "Open Plot",
+    "price": "$450,000",
+    "beds": "N/A",
+    "baths": "N/A",
+    "area": "500m²"
+  }
+]

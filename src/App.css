@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Solflare;
+  src: url(/solflare.ttf);
+}
+
+@font-face {
+  font-family: Andalsh;
+  src: url(/andalash.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Andalsh;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}

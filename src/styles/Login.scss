@@ -1,0 +1,115 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: url('/hero2.jpg') no-repeat center center/cover;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .login-middle {
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+        border: 1px solid #ffffff46;
+        border-radius: 20px;
+        height: 90%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+
+        .left {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            h1 {
+                font-size: 3vw;
+
+                span {
+                    font-family: Solflare;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .login-card {
+                height: 25vw;
+                width: 30vw;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5vw;
+
+                h2 {
+                    margin-bottom: 2vw;
+                    font-size: 2vw;
+                    align-self: center;
+
+                    span {
+                        font-family: Solflare;
+                    }
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2vw;
+
+                    input {
+                        padding: 1vw;
+                        border-radius: 8px;
+                        border: 1px solid #ffffff33;
+                        background: rgba(255, 255, 255, 0.05);
+                        color: #fff;
+                        font-size: 1vw;
+                        outline: none;
+
+                        &:focus {
+                            box-shadow: 0 0 10px #FDA33A;
+                            outline: none;
+                        }
+
+                        &::placeholder {
+                            color: #ffffff88;
+                        }
+                    }
+
+                    button {
+                        width: 50%;
+                        align-self: center;
+                        margin-top: 1vw;
+                        padding: 1vw;
+                        border-radius: 50px;
+                        background: linear-gradient(135deg, #f7d29f, #ed9025);
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 1.1vw;
+                        border: none;
+                        cursor: pointer;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            box-shadow: 0 0 20px #FDA33A;
+                        }
+                    }
+
+                    p {
+                        color: #FDA33A;
+                        font-size: 1vw;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

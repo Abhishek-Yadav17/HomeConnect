@@ -1,0 +1,80 @@
+.samples {
+    width: 100%;
+    padding: 4vw;
+    background-color: #191919;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+
+    h2 {
+        font-size: 3vw;
+        font-weight: 400;
+        text-align: center;
+
+        span {
+            font-family: Solflare;
+            font-size: 4vw;
+            color: #E98A3D;
+        }
+    }
+
+    .samples-container {
+        display: flex;
+        gap: 1vw;
+        width: 100%;
+        justify-content: center;
+        transition: all 0.3s ease;
+
+        .sample-card {
+            width: 18%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s ease;
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+                padding: 1vw;
+                opacity: 0;
+                transition: all 0.3s ease;
+
+                h4 {
+                    font-size: 1.5vw;
+                    opacity: 0;
+                    transform: translateY(50%);
+                    transition: all 0.4s ease;
+                }
+            }
+
+            &.active {
+                width: 35%;
+                box-shadow: 0 0 25px #E98A3D;
+            }
+
+            &:hover {
+                width: 35%;
+                box-shadow: 0 0 25px #FDA33A;
+            }
+
+            &.active .overlay,
+            &:hover .overlay {
+                opacity: 1;
+            }
+
+            &.active .overlay h4,
+            &:hover .overlay h4 {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
