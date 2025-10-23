@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer'
 import listingsData from '../data/listingsData.json';
 import '../styles/Properties.scss';
 
@@ -59,6 +60,7 @@ const Properties = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

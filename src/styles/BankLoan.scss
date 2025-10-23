@@ -21,11 +21,19 @@
             margin-bottom: 1vw;
             animation: pulse 2s infinite;
             font-family: Solflare;
+
+            @media (max-width: 768px) {
+                font-size: 6vw;
+            }
         }
 
         p {
             font-size: 1.5vw;
             color: #ffffffaa;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+            }
         }
     }
 }

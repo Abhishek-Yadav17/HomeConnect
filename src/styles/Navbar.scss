@@ -9,17 +9,26 @@
   color: #FFF;
   box-shadow: inset 0 50px 40px -1px rgba(0, 0, 0, 0.7);
   z-index: 999;
+  transition: all 0.5s ease;
 
   .logo {
     width: 12vw;
     object-fit: cover;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      width: 30vw;
+    }
   }
 
   .nav-right {
     display: flex;
     align-items: center;
     gap: 1.5vw;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     .nav2 {
       display: flex;
@@ -30,6 +39,13 @@
       padding: 1.2vw 3vw;
       border-radius: 50px;
 
+      @media (max-width: 768px) {
+        gap: 4vh;
+        flex-direction: column;
+        border: none;
+        padding: 0;
+      }
+
       h4 {
         font-size: 1.2vw;
         font-weight: 500;
@@ -38,6 +54,10 @@
 
         &:hover {
           color: #FF6A0B;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 6vw;
         }
       }
     }
@@ -57,12 +77,89 @@
       cursor: pointer;
       transition: all ease 0.5s;
 
+      &:hover {
+        color: #FF6A0B;
+      }
+
       i {
         font-size: 1.4vw;
+
+        @media (max-width: 768px) {
+          font-size: 6.5vw;
+        }
       }
+
+      @media (max-width: 768px) {
+        font-size: 6vw;
+        padding: 3vw 6vw;
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      font-size: 6vw;
+      cursor: pointer;
+      transition: color 0.3s ease;
 
       &:hover {
         color: #FF6A0B;
+      }
+    }
+  }
+
+  .menu-content {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &.open {
+    @media (max-width: 768px) {
+      height: 100vh;
+      width: 100%;
+      background-color: transparent;
+      backdrop-filter: blur(20px);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 6vw;
+        width: 25vw;
+      }
+
+      .menu-icon {
+        position: absolute;
+        top: 5vh;
+        right: 6vw;
+        font-size: 8vw;
+      }
+
+      .menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+
+        h4 {
+          font-size: 6vw;
+          font-weight: 500;
+          cursor: pointer;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #FF6A0B;
+          }
+        }
       }
     }
   }

@@ -9,20 +9,36 @@
     align-items: center;
     gap: 2vw;
 
+    @media (max-width: 768px) {
+        gap: 8vw;
+    }
+
     h2 {
         font-size: 3vw;
         margin-bottom: 2vw;
         font-weight: 400;
 
+        @media (max-width: 768px) {
+            font-size: 6vw;
+        }
+
         span {
             font-size: 4vw;
             font-family: Solflare;
             color: #E98A3D;
+
+            @media (max-width: 768px) {
+                font-size: 7vw;
+            }
         }
     }
 
     img {
         width: 100px;
+
+        @media (max-width: 768px) {
+            width: 50px;
+        }
     }
 
     .testimonial {
@@ -37,6 +53,11 @@
             line-height: 1.5;
             width: 70%;
             margin-bottom: 3vw;
+
+            @media (max-width: 768px) {
+                font-size: 3.5vw;
+                width: 100%;
+            }
         }
 
         .avatar {
@@ -46,21 +67,39 @@
             object-fit: cover;
             border: 3px solid #FDA33A;
             box-shadow: 0 0 12px #FDA33A;
+
+            @media (max-width: 768px) {
+                height: 100px;
+                width: 100px;
+                margin-top: 4vw;
+            }
         }
 
         .name {
             font-size: 1.4vw;
+
+            @media (max-width: 768px) {
+                font-size: 4vw;
+            }
         }
 
         .profession {
             font-size: 1.1vw;
             color: #bdbcbc;
+
+            @media (max-width: 768px) {
+                font-size: 3vw;
+            }
         }
     }
 
     .nav-buttons {
         display: flex;
         gap: 2vw;
+
+        @media (max-width: 768px) {
+                gap: 4vw;
+            }
 
         button {
             background: rgba(255, 255, 255, 0.05);
@@ -74,6 +113,11 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+            @media (max-width: 768px) {
+                padding: 3vw 3.5vw;
+                font-size: 4vw;
+            }
 
             &:hover {
                 background-color: #FDA33A;

@@ -8,6 +8,11 @@
     align-items: center;
     gap: 2vw;
 
+    @media (max-width: 768px) {
+        justify-content: center;
+        gap: 8vw;
+    }
+
     >p {
         display: flex;
         align-items: center;
@@ -18,6 +23,13 @@
         padding: 0.5vw 2vw;
         border-radius: 50px;
         box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.3);
+
+        @media (max-width: 768px) {
+            font-size: 3vw;
+            padding: 1vw 4vw;
+            gap: 2vw;
+            align-self: center;
+        }
 
         .pilldot {
             width: 8px;
@@ -32,10 +44,19 @@
         font-weight: 400;
         align-self: flex-start;
 
+        @media (max-width: 768px) {
+            font-size: 6vw;
+            align-self: center;
+        }
+
         span {
             font-family: Solflare;
             color: #E98A3D;
             font-size: 4vw;
+
+            @media (max-width: 768px) {
+                font-size: 7vw;
+            }
         }
     }
 
@@ -45,6 +66,10 @@
         margin-top: 3vw;
         width: 100%;
         gap: 4vw;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
 
         .image-section {
             flex: 1;
@@ -62,10 +87,18 @@
             flex-direction: column;
             gap: 2vw;
 
+            @media (max-width: 768px) {
+                gap: 4vw;
+            }
+
             .faq-item {
                 background-color: rgba(255, 255, 255, 0.05);
                 padding: 1.5vw;
                 border-radius: 20px;
+
+                @media (max-width: 768px) {
+                    padding: 4vw;
+                }
 
                 .faq-header {
                     display: flex;
@@ -76,12 +109,20 @@
                     h4 {
                         font-size: 1.4vw;
                         font-weight: 500;
+
+                        @media (max-width: 768px) {
+                            font-size: 3.5vw;
+                        }
                     }
 
                     span {
                         font-size: 2vw;
                         color: #FDA33A;
                         transition: all 0.3s ease;
+
+                        @media (max-width: 768px) {
+                            font-size: 5vw;
+                        }
                     }
                 }
 
@@ -89,6 +130,10 @@
                     margin-top: 1vw;
                     font-size: 1.1vw;
                     color: #bdbcbc;
+
+                    @media (max-width: 768px) {
+                        font-size: 3vw;
+                    }
                 }
             }
         }

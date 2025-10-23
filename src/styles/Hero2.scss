@@ -1,4 +1,4 @@
-.hero2{
+.hero2 {
     height: 100vh;
     width: 100%;
     background-image: url(/hero1.webp);
@@ -16,6 +16,11 @@
         font-size: 6vw;
         font-family: Solflare;
         margin-bottom: 2vw;
+
+        @media (max-width: 768px) {
+            font-size: 10vw;
+            margin-bottom: 4vw;
+        }
     }
 
     h4 {
@@ -24,5 +29,10 @@
         width: 70%;
         font-weight: 500;
         margin-bottom: 2vw;
+
+        @media (max-width: 768px) {
+            font-size: 3.5vw;
+            width: 100%;
+        }
     }
 }

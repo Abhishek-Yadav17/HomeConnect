@@ -19,6 +19,10 @@
         justify-content: space-between;
         border-radius: 20px;
 
+        @media (max-width: 768px) {
+            height: 50vh;
+        }
+
         .left {
             width: 50%;
             display: flex;
@@ -26,6 +30,10 @@
             justify-content: center;
             position: relative;
             z-index: 1;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
 
             h1 {
                 font-size: 3vw;
@@ -42,6 +50,11 @@
             align-items: center;
             justify-content: center;
 
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-top: -20vw;
+            }
+
             .login-card {
                 height: 25vw;
                 width: 30vw;
@@ -49,10 +62,19 @@
                 flex-direction: column;
                 gap: 1.5vw;
 
+                @media (max-width: 768px) {
+                    width: 70%;
+                    gap: 4vw;
+                }
+
                 h2 {
                     margin-bottom: 2vw;
                     font-size: 2vw;
                     align-self: center;
+
+                    @media (max-width: 768px) {
+                        font-size: 6vw;
+                    }
 
                     span {
                         font-family: Solflare;
@@ -64,6 +86,10 @@
                     flex-direction: column;
                     gap: 2vw;
 
+                    @media (max-width: 768px) {
+                        gap: 4vw;
+                    }
+
                     input {
                         padding: 1vw;
                         border-radius: 8px;
@@ -72,6 +98,11 @@
                         color: #fff;
                         font-size: 1vw;
                         outline: none;
+
+                        @media (max-width: 768px) {
+                            padding: 2vw;
+                            font-size: 3vw;
+                        }
 
                         &:focus {
                             box-shadow: 0 0 10px #FDA33A;
@@ -96,6 +127,11 @@
                         border: none;
                         cursor: pointer;
                         transition: 0.3s ease;
+
+                        @media (max-width: 768px) {
+                            padding: 3vw 4vw;
+                            font-size: 3vw;
+                        }
 
                         &:hover {
                             box-shadow: 0 0 20px #FDA33A;

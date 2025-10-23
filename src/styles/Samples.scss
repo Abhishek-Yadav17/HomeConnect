@@ -8,15 +8,27 @@
     align-items: center;
     gap: 3vw;
 
+    @media (max-width: 768px) {
+        gap: 8vw;
+    }
+
     h2 {
         font-size: 3vw;
         font-weight: 400;
         text-align: center;
 
+        @media (max-width: 768px) {
+            font-size: 6vw;
+        }
+
         span {
             font-family: Solflare;
             font-size: 4vw;
             color: #E98A3D;
+
+            @media (max-width: 768px) {
+                font-size: 7vw;
+            }
         }
     }
 
@@ -26,6 +38,11 @@
         width: 100%;
         justify-content: center;
         transition: all 0.3s ease;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10vw;
+        }
 
         .sample-card {
             width: 18%;
@@ -38,6 +55,12 @@
             cursor: pointer;
             transition: all 0.4s ease;
 
+            @media (max-width: 768px) {
+                width: 100%;
+                height: 200px;
+                box-shadow: 0 0 15px #E98A3D;
+            }
+
             .overlay {
                 position: absolute;
                 bottom: 0;
@@ -47,22 +70,41 @@
                 opacity: 0;
                 transition: all 0.3s ease;
 
+                @media (max-width: 768px) {
+                    opacity: 1;
+                    padding: 4vw;
+                }
+
                 h4 {
                     font-size: 1.5vw;
                     opacity: 0;
                     transform: translateY(50%);
                     transition: all 0.4s ease;
+
+                    @media (max-width: 768px) {
+                        opacity: 1;
+                        font-size: 4vw;
+                        transform: translateY(0%);
+                    }
                 }
             }
 
             &.active {
                 width: 35%;
                 box-shadow: 0 0 25px #E98A3D;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
 
             &:hover {
                 width: 35%;
                 box-shadow: 0 0 25px #FDA33A;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
 
             &.active .overlay,
