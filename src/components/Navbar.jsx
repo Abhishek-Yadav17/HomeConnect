@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <img src="/logo.png" alt="logo" className='logo' />
+      <img onClick={() => navigate('/properties')} src="/logo.png" alt="logo" className='logo' />
       <div className="nav-right">
         <div className="nav2">
           <h4 onClick={() => navigate('/properties')}>Properties</h4>
