@@ -45,6 +45,11 @@
       font-family: Solflare;
       color: #FDA33A;
       font-size: 2vw;
+
+      @media (max-width: 768px) {
+        font-size: 5vw;
+        width: 90%;
+      }
     }
   }
 
