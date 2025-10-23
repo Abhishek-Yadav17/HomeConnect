@@ -107,6 +107,10 @@
                 font-family: Solflare;
                 color: #E98A3D;
                 font-size: 2vw;
+
+                @media (max-width: 768px) {
+                    font-size: 5vw;
+                }
             }
 
             .tagline {
@@ -115,6 +119,12 @@
                 font-family: Andalsh;
                 font-size: 1.5vw;
                 margin-top: 4vw;
+
+                @media (max-width: 768px) {
+                    font-size: 4vw;
+                    text-align: center;
+                    width: 100%;
+                }
             }
         }
     }
