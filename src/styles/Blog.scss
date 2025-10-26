@@ -10,6 +10,7 @@
     gap: 2vw;
 
     @media (max-width: 768px) {
+        padding-top: 10vw;
         gap: 8vw;
     }
 
@@ -98,8 +99,8 @@
         gap: 2vw;
 
         @media (max-width: 768px) {
-                gap: 4vw;
-            }
+            gap: 4vw;
+        }
 
         button {
             background: rgba(255, 255, 255, 0.05);

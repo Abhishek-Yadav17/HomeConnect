@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Navbar.scss';
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,16 +10,16 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
-      <img onClick={() => navigate('/')} src="/logo.png" alt="logo" className="logo" />
+      <img onClick={() => window.location.href = '/'} src="/logo.png" alt="logo" className="logo" />
 
       <div className="nav-right">
         <div className="nav2">
-          <h4 onClick={() => navigate('/properties')}>Properties</h4>
-          <h4 onClick={() => navigate('/interior-design')}>Interior Design</h4>
-          <h4 onClick={() => navigate('/bank')}>Bank Loan</h4>
+          <h4 onClick={() => window.location.href = '/properties'}>Properties</h4>
+          <h4 onClick={() => window.location.href = '/interior-design'}>Interior Design</h4>
+          <h4 onClick={() => window.location.href = '/bank'}>Bank Loan</h4>
         </div>
 
-        <button className="admin-btn" onClick={() => navigate('/login')}>
+        <button className="admin-btn" onClick={() => window.location.href = '/login'}>
           <i className="ri-admin-line"></i>
         </button>
       </div>
@@ -32,10 +30,10 @@ const Navbar = () => {
 
       {menuOpen && (
         <div className="menu-content">
-          <h4 onClick={() => { navigate('/properties'); setMenuOpen(false); }}>Properties</h4>
-          <h4 onClick={() => { navigate('/interior-design'); setMenuOpen(false); }}>Interior Design</h4>
-          <h4 onClick={() => { navigate('/bank'); setMenuOpen(false); }}>Bank Loan</h4>
-          <h4 onClick={() => { navigate('/login'); setMenuOpen(false); }}>Admin</h4>
+          <h4 onClick={() => { window.location.href = '/properties'; setMenuOpen(false); }}>Properties</h4>
+          <h4 onClick={() => { window.location.href = '/interior-design'; setMenuOpen(false); }}>Interior Design</h4>
+          <h4 onClick={() => { window.location.href = '/bank'; setMenuOpen(false); }}>Bank Loan</h4>
+          <h4 onClick={() => { window.location.href = '/login'; setMenuOpen(false); }}>Admin</h4>
         </div>
       )}
     </nav>

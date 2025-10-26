@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/Listings.scss';
 import listingsData from '../data/listingsData.json';
-import { useNavigate } from 'react-router-dom';
 
 const Listings = () => {
 
     const [filter, setFilter] = useState('all');
-    const navigate = useNavigate();
 
     const filteredListings = filter === 'all'
         ? listingsData
@@ -55,7 +53,7 @@ const Listings = () => {
                 ))}
             </div>
 
-            <button className="explore-btn" onClick={() => navigate('/properties')}>
+            <button className="explore-btn" onClick={() => window.location.href = '/properties'}>
                 Explore More <i className="ri-arrow-right-up-line"></i>
             </button>
         </div>
